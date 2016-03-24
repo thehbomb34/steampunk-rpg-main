@@ -12,7 +12,7 @@ public class WriteMovelist : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         sans = Resources.Load("Comic Sans MS", typeof(Font)) as Font;
-        attack1.text = "Sonic Phantom";
+        attack1.text = "Jotun";
         attack2.text = "Deep Six";
         attack2.font = (Font)Resources.Load("911Fonts.com_ComicSansMSRegular__-_911fonts.com-fonts-BpCS");
         attack1.font = (Font)Resources.Load("True Lies");

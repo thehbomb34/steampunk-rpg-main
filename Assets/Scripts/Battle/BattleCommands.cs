@@ -13,6 +13,7 @@ public class BattleCommands : MonoBehaviour {
     public static bool runGrittySlap = false;
     public static bool runSolarShot = false;
     public static bool runSonicPhantom = false;
+    public static bool runJotun = false;
     public bool walking = false;
     public Text damageText;
     DrawDamage damageWriter;
@@ -56,7 +57,8 @@ public class BattleCommands : MonoBehaviour {
                 StartCoroutine(AnimationMenuMove(5.5f));
                 //runGrittySlap = true;
                 //runSolarShot = true;
-                runSonicPhantom = true;
+                //runSonicPhantom = true;
+                runJotun = true;
             }
             else
             {
