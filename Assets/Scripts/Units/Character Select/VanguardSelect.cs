@@ -10,7 +10,8 @@ public class VanguardSelect : MonoBehaviour {
 	private bool isTextActive;
 	private Text classText, classDescription;
 	private Vector3 scaleOnMouseover, offset, originalScale, originalPosition;
-	
+    public Animator animVanguard;
+
 	void Start() {
 		classText = GameObject.Find ("VanguardSelectText").GetComponent<Text> ();
 		classDescription = GameObject.Find ("VanguardDescriptionText").GetComponent<Text> ();
@@ -23,6 +24,7 @@ public class VanguardSelect : MonoBehaviour {
 		
 		originalScale = transform.localScale;
 		originalPosition = transform.position;
+        animVanguard.Play("Idle");
 	}
 	
 	void Update () {
